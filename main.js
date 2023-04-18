@@ -75,14 +75,6 @@ const createPages = (book) => {
   return pages;
 };
 
-const mockingBird = new Book("To Kill a Mockingbird", "Harper Lee", 300);
-const orwell = new Book("1984", "George Orwell", 302);
-const rye = new Book("The Catcher in the Rye", "J.D. Salinger", 205);
-
-library.push(mockingBird);
-library.push(orwell);
-library.push(rye);
-
 const bookForm = document.getElementById("createBook");
 bookForm.addEventListener("submit", (e) => {
   e.preventDefault();
