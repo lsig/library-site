@@ -1,0 +1,26 @@
+#createBook {
+  display: flex;
+  flex-direction: column;
+  background-color: #87ceeb;
+  width: 15%;
+  height: 20%;
+  padding: 1rem;
+  margin: 2rem;
+  border: 4px #add8e6 solid;
+}
+
+#books {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f1d6e0;
+  width: 15%;
+  padding: 1rem;
+  margin: 2rem;
+}
