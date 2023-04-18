@@ -2,7 +2,7 @@ let library = [];
 let id = 1;
 
 function Book(title, author, length) {
-  this.id = id;
+  this.id = id.toString();
   this.title = title;
   this.author = author;
   this.length = length;
@@ -38,18 +38,28 @@ const createBook = (book) => {
   const title = createTitle(book);
   const author = createAuthor(book);
   const pages = createPages(book);
-  const button = document.createElement("button");
-  button.innerHTML = "read";
+  const readButton = document.createElement("button");
+  readButton.innerHTML = "read";
 
-  button.addEventListener("click", (e) => {
+  const deleteButton = document.createElement("button");
+  deleteButton.innerHTML = "remove";
+
+  readButton.addEventListener("click", (e) => {
     bookDiv.style.backgroundColor = "#d4e4bc";
     book.read = true;
+  });
+
+  deleteButton.addEventListener("click", (e) => {
+    const bookIndex = library.findIndex((book) => bookDiv.id === book.id);
+    library.splice(bookIndex, 1);
+    addBookToLibrary();
   });
 
   bookDiv.appendChild(title);
   bookDiv.appendChild(author);
   bookDiv.appendChild(pages);
-  bookDiv.appendChild(button);
+  bookDiv.appendChild(readButton);
+  bookDiv.appendChild(deleteButton);
 
   return bookDiv;
 };
