@@ -1,3 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #87ceeb;
+  padding: 2rem;
+  margin-top: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+header h2,
+#login {
+  color: white;
+  padding: 0rem 2rem;
+}
+
+#login {
+  background-color: #87ceeb;
+  border: 2px white solid;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+#login:hover {
+  background-color: #38aede;
+}
+
 #createBook,
 .book {
   display: flex;
