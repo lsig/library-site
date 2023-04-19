@@ -2,20 +2,21 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #87ceeb;
-  padding: 2rem;
+  padding: 1rem 2rem;
   margin-top: -1rem;
   margin-left: -1rem;
   margin-right: -1rem;
 }
 
-header h2,
-#login {
+header h2 {
   color: white;
   padding: 0rem 2rem;
 }
 
 #login {
   background-color: #87ceeb;
+  color: white;
+  padding: 0.5rem 2rem;
   border: 2px white solid;
   border-radius: 8px;
   font-size: 18px;
