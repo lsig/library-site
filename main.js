@@ -43,6 +43,9 @@ const createBook = (book) => {
 
   const deleteButton = document.createElement("button");
   deleteButton.innerHTML = "remove";
+  if (book.read) {
+    bookDiv.style.backgroundColor = "#d4e4bc";
+  }
 
   readButton.addEventListener("click", (e) => {
     bookDiv.style.backgroundColor = "#d4e4bc";
